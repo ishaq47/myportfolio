@@ -51,7 +51,7 @@ function Contact() {
             <div className=''>
                 <div className='conatctcontainer flex items-center justify-center md:justify-start  gap-2  '>
                     
-                    <h1 className='text-3xl flex gap-2 font-bold italic text-yellow-200'>
+                    <h1 className='text-4xl flex gap-2 font-bold italic text-yellow-200'>
                         <p> CONTACT</p> <p>ME</p>
                     </h1>
                    

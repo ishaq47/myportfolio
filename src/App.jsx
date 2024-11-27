@@ -8,10 +8,9 @@ import Footer from './components/Footer';
 import Skills from './components/Skills';
 import Experience from './components/Experience';
 import Contact from './components/Contact';
-
 function App() {
   return (
-    <div className='bg-gray-800 w-[100%] text-white px-[20px]'>
+    <div className='app bg-gray-900 w-[100%] text-white px-[20px]'>
       <Header />
       <Element name='home'>
         <Home />

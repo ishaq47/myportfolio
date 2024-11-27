@@ -1,3 +1,46 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.app {
+    
+    font-family: "DynaPuff", serif;
+
+}
+@keyframes highlight {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.skill-card {
+    animation: highlight 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project-card {
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(255, 215, 0, 0.5);
+}

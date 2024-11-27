@@ -1,71 +1,72 @@
-import React from 'react'
-import html from '../images/html.jpeg'
-import css from '../images/css.jpeg'
-import js from '../images/js.jpeg'
-import redux from '../images/reduxtoolkit.png'
-import react from '../images/react.png'
-import tailwind from '../images/tailwind.png'
-import git from '../images/git.png'
-import github from '../images/github.png'
-
+import React from 'react';
+import html from '../images/html.jpeg';
+import css from '../images/css.jpeg';
+import js from '../images/js.jpeg';
+import redux from '../images/reduxtoolkit.png';
+import react from '../images/react.png';
+import tailwind from '../images/tailwind.png';
+import git from '../images/git.png';
+import github from '../images/github.png';
 
 function Skills() {
-    const skill=[
+    const skills = [
         {
-            image:html,
-            text:'HTML'
+            image: html,
+            text: 'HTML'
         },
         {
-            image:css,
-            text:'CSS'
+            image: css,
+            text: 'CSS'
         },
         {
-            image:js,
-            text:'JAVASCRIPT'
+            image: js,
+            text: 'JAVASCRIPT'
         },
         {
-            image:redux,
-            text:'TOOLKIT'
+            image: redux,
+            text: 'REDUX TOOLKIT'
         },
         {
-            image:react,
-            text:'REACT'
+            image: react,
+            text: 'REACT'
         },
         {
-            image:tailwind,
-            text:'TAILWIND CSS'
+            image: tailwind,
+            text: 'TAILWIND CSS'
         },
         {
-            image:git,
-            text:'GIT'
+            image: git,
+            text: 'GIT'
         },
         {
-            image:github,
-            text:'GITHUB'
+            image: github,
+            text: 'GITHUB'
         },
-    ]
-  return (
-    <div className='p-[20px] md:px-[100px] flex flex-col justify-center items-center md:h-screen '>
+    ];
 
-<h1 className='text-3xl font-bold italic text-yellow-200 mb-[50px] md:mb-[100px]'>
-          MY SKILLS
-        </h1>
-        <div className='flex flex-wrap gap-6 justify-center '>
-            {
-                skill.map((skill,id)=>{
-                    return   <div key={id} className='md:w-[200px] w-[125px] h-[125px] md:h-[200px] flex flex-col items-center justify-center rounded-xl bg-slate-600 hover:scale-105 transition-all'>
-                        <img src={skill.image} className='md:h-[100px] h-[90px] w-[90px] md:w-[100px] rounded-2xl object-cover'/>
-                        <p className='hidden md:block text-yellow-500 text-xl font-bold pt-5'>{skill.text}</p>
-                    </div>
-                })
-            }
-           
-
+    return (
+        <div className='p-6 md:px-20 flex flex-col  justify-center items-center md:items-start md:justify-start md:h-screen  text-white'>
+            <h1 className='text-4xl font-bold italic text-yellow-300 mb-10 md:mb-20'>
+                MY SKILLS
+            </h1>
+            <div className='flex flex-wrap gap-8 justify-center'>
+                {
+                    skills.map((skill, id) => {
+                        return (
+                            <div
+                                key={id}
+                                className='w-32 h-32 md:w-48 md:h-48 flex flex-col items-center justify-center rounded-2xl bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 skill-card'
+                                style={{ animationDelay: `${id * 0.2}s` }}
+                            >
+                                <img src={skill.image} className='h-20 w-20 md:h-24 md:w-24 rounded-full object-cover' alt={skill.text} />
+                                <p className='text-yellow-400 text-lg md:text-xl font-semibold mt-4'>{skill.text}</p>
+                            </div>
+                        );
+                    })
+                }
+            </div>
         </div>
-
-
-    </div>
-  )
+    );
 }
 
-export default Skills
+export default Skills;
