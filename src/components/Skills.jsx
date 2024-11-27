@@ -49,7 +49,7 @@ function Skills() {
             <h1 className='text-4xl font-bold italic text-yellow-300 mb-10 md:mb-20'>
                 MY SKILLS
             </h1>
-            <div className='flex flex-wrap gap-8 justify-center'>
+            <div className='flex flex-wrap gap-4 md:gap-8 justify-center'>
                 {
                     skills.map((skill, id) => {
                         return (
