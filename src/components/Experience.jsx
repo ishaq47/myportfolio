@@ -5,7 +5,7 @@ function Experience() {
     return (
         <div className=' p-[20px] md:px-[100px] md:h-screen mt-[100px] md:text-start text-center'>
             <div className='md:w-[80%]'>
-                <h1 className='text-4xl font-bold italic text-yellow-200'>
+                <h1 className='text-4xl font-bold italic text-yellow-400'>
                     EXPERIENCE
                 </h1>
                 <div className='w-[20px] h-[20px] bg-yellow-400 rounded-full mt-[40px]'></div>
