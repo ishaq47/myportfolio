@@ -74,7 +74,7 @@ function Portfolio() {
                                 className='w-80 flex flex-col items-center justify-center rounded-2xl bg-gray-800  shadow-lg hover:shadow-xl transition-all duration-300 project-card'
                                 style={{ animationDelay: `${id * 0.2}s` }}
                             >
-                                <img src={project.image} className='w-full h-48 object-cover rounded-t-2xl' alt={project.text} />
+                                <img src={project.image} className='w-full h-48 object-contain bg-center rounded-t-2xl' alt={project.text} />
                                 <div className='p-4 w-full text-center'>
                                     <p className='text-xl font-semibold text-yellow-300 mb-4'>{project.text}</p>
                                     <a href={project.link} target="_blank" rel="noopener noreferrer">
