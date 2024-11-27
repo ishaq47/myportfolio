@@ -42,10 +42,22 @@ function Skills() {
             image: github,
             text: 'GITHUB'
         },
+        {
+            image: 'https://ajeetchaulagain.com/static/7cb4af597964b0911fe71cb2f8148d64/87351/express-js.png',
+            text: 'EXPRESS'
+        },
+        {
+            image: 'https://w7.pngwing.com/pngs/956/695/png-transparent-mongodb-original-wordmark-logo-icon.png',
+            text: 'MONGODB'
+        },
+        {
+            image: 'https://logos-download.com/wp-content/uploads/2016/09/Node_logo_NodeJS.png',
+            text: 'NODE JS'
+        },
     ];
 
     return (
-        <div className='p-6 md:px-20 flex flex-col  justify-center items-center md:items-start md:justify-start md:h-screen  text-white'>
+        <div className='p-6 md:px-20 flex flex-col  justify-center items-center md:items-start md:justify-start   text-white'>
             <h1 className='text-4xl font-bold italic text-yellow-300 mb-10 md:mb-20'>
                 MY SKILLS
             </h1>
