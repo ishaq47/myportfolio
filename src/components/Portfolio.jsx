@@ -76,7 +76,7 @@ function Portfolio() {
                             >
                                 <img src={project.image} className='w-full h-48 object-cover rounded-t-2xl' alt={project.text} />
                                 <div className='p-4 w-full text-center'>
-                                    <p className='text-xl font-semibold text-yellow-400 mb-4'>{project.text}</p>
+                                    <p className='text-xl font-semibold text-yellow-300 mb-4'>{project.text}</p>
                                     <a href={project.link} target="_blank" rel="noopener noreferrer">
                                         <button className='border rounded hover:text-white hover:bg-yellow-600 text-yellow-400 border-yellow-400 p-2 transition-colors duration-300'>
                                             Visit Website
