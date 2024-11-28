@@ -7,13 +7,13 @@ function About() {
       initial={{ opacity: 0, x: 50 }}
       animate={{ opacity: 1, x: 0 }}
       transition={{ duration: 2 }}
-      className='p-[20px] md:px-[100px] flex items-center md:h-screen'
+      className=' md:px-[100px] flex items-center md:h-screen'
     >
       <div className=' md:text-start  text-center'>
         <h1 className='text-4xl font-bold italic text-yellow-400'>
           ABOUT ME
         </h1>
-        <p className='text-xl p-3'>
+        <p className='text-xl md:leading-10'>
           Hi, I am <i className='text-yellow-400'>Muhammad Ishaq</i>, a passionate MERN stack developer with a blend of technical expertise and design sensibility.
            I specialize in crafting intuitive user interfaces and robust back-end systems that captivate and engage audiences. 
            Proficient in <i className='text-yellow-400'>HTML, CSS, and JavaScript</i>, I leverage the latest web technologies

@@ -1,33 +1,52 @@
-import React from 'react'
-import { FaLocationArrow } from 'react-icons/fa'
+import React from 'react';
+import { motion } from 'framer-motion';
+import { FaLocationArrow } from 'react-icons/fa';
 
 function Experience() {
     return (
-        <div className=' p-[20px] md:px-[100px] md:h-screen mt-[100px] md:text-start text-center'>
-            <div className='md:w-[80%]'>
-                <h1 className='text-4xl font-bold italic text-yellow-400'>
+        <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className='md:px-[100px] md:h-screen md:mt-[100px] md:text-start md:flex md:items-center text-center'
+        >
+            <div className='md:w-[100%] mx-auto'>
+                <motion.h1
+                    initial={{ opacity: 0, y: -50 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 1, delay: 0.5 }}
+                    className='text-4xl font-bold italic text-yellow-400 mb-6'
+                >
                     EXPERIENCE
-                </h1>
-                <div className='w-[20px] h-[20px] bg-yellow-400 rounded-full mt-[40px]'></div>
-                
-                <div className='relative  md:ml-10 p-3'>
-                    <div className='flex flex-wrap gap-2'>
-                    <p className='text-xl p-1  font-semibold italic text-yellow-200'>TECHCREATOR</p>
-                    <div className='flex gap-1   '>
-                            <FaLocationArrow className='self-center text-gray-400 ' />
-                            <a className='font-light text-gray-400  self-center'>Swabi, KPK, Pakistan</a>
-                        </div>
-                        </div>
-                    <p className='text-xl italic text-gray-400'>November-2023 to Present</p>
-                    <p className='text-gray-400 text-xl font-light'>Since November 2023, I've immersed myself in the world of frontend development, driven by curiosity and a passion for crafting captivating digital experiences. From mastering HTML,
-                        CSS, and JavaScript to exploring cutting-edge framework like React, every project has been a chance to innovate and elevate. Collaborating with diverse teams and staying plugged into industry trends, I've honed my skills and embraced the ethos of community-driven development. As I continue on this journey,
-                        I'm excited to push boundaries and create impactful experiences that resonate globally.</p>
-                </div>
-                <div className='w-[20px] h-[20px] flex justify-end items-end bg-yellow-400 rounded-full mt-[20px]'></div>
+                </motion.h1>
 
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 1, delay: 1 }}
+                    className='relative md:ml-10'
+                >
+                    <div className='flex flex-wrap gap-2 items-center mb-4'>
+                        <p className='text-xl p-1 font-semibold italic text-yellow-200'>TECHCREATOR</p>
+                        <div className='flex gap-1'>
+                            <FaLocationArrow className='self-center text-gray-400' />
+                            <a className='font-light text-gray-400 self-center'>Swabi, KPK, Pakistan</a>
+                        </div>
+                    </div>
+                    <p className='text-xl italic text-gray-400 mb-4'>November 2023 to Present</p>
+                    <motion.p
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 1, delay: 1.5 }}
+                        whileHover={{ scale: 1.05 }}
+                        className='text-gray-400 text-xl font-light'
+                    >
+                        Since November 2023, I've been deeply involved in full-stack development using the MERN stack. I have a strong foundation in setting up and managing backend services with Node.js and Express, and I am particularly confident in my frontend development skills with React. My expertise includes creating dynamic and responsive user interfaces, ensuring seamless integration with backend APIs, and delivering high-quality digital experiences. I thrive in collaborative environments and stay updated with the latest industry trends to continuously improve my skills and contribute to innovative projects.
+                    </motion.p>
+                </motion.div>
             </div>
-        </div>
-    )
+        </motion.div>
+    );
 }
 
-export default Experience
+export default Experience;

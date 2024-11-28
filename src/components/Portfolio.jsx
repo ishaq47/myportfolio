@@ -71,7 +71,7 @@ function Portfolio() {
                         return (
                             <div
                                 key={id}
-                                className='w-80 flex flex-col items-center justify-center rounded-2xl bg-gray-800  shadow-lg hover:shadow-xl transition-all duration-300 project-card'
+                                className='w-80 flex flex-col items-center hover:animate-pulse justify-center rounded-2xl bg-gray-800  shadow-lg hover:shadow-xl transition-all duration-300 project-card'
                                 style={{ animationDelay: `${id * 0.2}s` }}
                             >
                                 <img src={project.image} className='w-full h-48 object-contain bg-center rounded-t-2xl' alt={project.text} />

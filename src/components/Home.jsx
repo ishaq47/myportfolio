@@ -15,7 +15,7 @@ function Home() {
           <p className='text-5xl '>I'M <strong className='text-yellow-400'>Muhammad Ishaq</strong><br />
             <p>MERN Stack <br /> Developer</p>
           </p>
-          <button className='p-2 px-4 border-[1px] text-yellow-400 hover:text-white border-yellow-400 mt-5  hover:bg-yellow-600'><Link to="contact" spy={true} smooth={true} duration={500} >CONTACT</Link></button>
+          <button className='p-2 px-4 border-[1px] text-yellow-400 hover:animate-pulse hover:text-white border-yellow-400 mt-5  hover:bg-yellow-600'><Link to="contact" spy={true} smooth={true} duration={500} >CONTACT</Link></button>
         </motion.div>
         <motion.div
           initial={{ opacity: 0, x: -50 }}
