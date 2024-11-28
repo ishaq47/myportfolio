@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 function Home() {
   return (
     <div>
-      <div className='flex flex-wrap gap-4 h-full md:h-screen justify-around items-center mt-[-50px] md:mt-[-100px]  mb-10'>
+      <div className='flex flex-wrap gap-4 h-full md:h-screen justify-around items-center  md:mt-[-100px]  mb-10'>
         <motion.div
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}

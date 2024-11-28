@@ -67,7 +67,7 @@ function Skills() {
                         return (
                             <div
                                 key={id}
-                                className='w-32 h-32 md:w-48 md:h-48 flex flex-col items-center justify-center rounded-2xl bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 skill-card'
+                                className='w-32 h-32 md:pt-0 pt-2  md:w-48 md:h-48 flex flex-col items-center justify-center rounded-2xl bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300 skill-card'
                                 style={{ animationDelay: `${id * 0.2}s` }}
                             >
                                 <img src={skill.image} className='h-20 w-20 md:h-24 md:w-24 rounded-full object-cover' alt={skill.text} />
