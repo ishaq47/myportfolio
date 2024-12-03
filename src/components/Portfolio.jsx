@@ -44,7 +44,7 @@ function Portfolio() {
         },
         {
             image: gym,
-            link: 'https://smg123.netlify.app',
+            link: 'https://gym-website-frontend.vercel.app',
             text: 'Gym Website',
         },
         {
