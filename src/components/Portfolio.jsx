@@ -8,6 +8,8 @@ import move from '../images/move.jpg';
 import rpm from '../images/rpm.jpg';
 import kkra from '../images/kkra.jpg';
 import global from '../images/global.jpg';
+import lf from '../images/lf.png';
+
 
 
 function Portfolio() {
@@ -56,6 +58,11 @@ function Portfolio() {
             image: rpm,
             link: 'https://rpm-service1.netlify.app',
             text: 'RPM Service',
+        },
+        {
+            image: lf,
+            link: 'https://linkfluencer.io',
+            text: 'Link Fluencer',
         },
         
         
