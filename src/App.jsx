@@ -10,7 +10,7 @@ import Experience from './components/Experience';
 import Contact from './components/Contact';
 function App() {
   return (
-    <div className='app bg-gray-900 w-[100%] text-white px-[20px]'>
+    <div className='app bg-green-900 w-[100%] text-white px-[20px]'>
       <Header />
       <Element name='home'>
         <Home />
