@@ -33,7 +33,7 @@ function Experience() {
                             <a className='font-light text-gray-400 self-center'>Swabi, KPK, Pakistan</a>
                         </div>
                     </div>
-                    <p className='text-xl italic text-gray-400 mb-4'>November 2023 to Present</p>
+                    <p className='text-xl italic text-gray-400 mb-4'>November 2022 to Present</p>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
