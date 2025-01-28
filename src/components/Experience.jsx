@@ -33,7 +33,7 @@ function Experience() {
                             <a className='font-light text-gray-400 self-center'>Swabi, KPK, Pakistan</a>
                         </div>
                     </div>
-                    <p className='text-xl italic text-gray-400 mb-4'>November 2022 to Present</p>
+                    <p className='text-xl italic text-gray-400 mb-4'>January 2023 to Present</p>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         animate={{ opacity: 1, y: 0 }}
@@ -41,7 +41,7 @@ function Experience() {
                         whileHover={{ scale: 1.05 }}
                         className='text-gray-400 text-xl font-light'
                     >
-                        Since November 2022, I've been deeply involved in full-stack development using the MERN stack. I have a strong foundation in setting up and managing backend services with Node.js and Express, and I am particularly confident in my frontend development skills with React. My expertise includes creating dynamic and responsive user interfaces, ensuring seamless integration with backend APIs, and delivering high-quality digital experiences. I thrive in collaborative environments and stay updated with the latest industry trends to continuously improve my skills and contribute to innovative projects.
+                        Since January 2023, I've been deeply involved in full-stack development using the MERN stack. I have a strong foundation in setting up and managing backend services with Node.js and Express, and I am particularly confident in my frontend development skills with React. My expertise includes creating dynamic and responsive user interfaces, ensuring seamless integration with backend APIs, and delivering high-quality digital experiences. I thrive in collaborative environments and stay updated with the latest industry trends to continuously improve my skills and contribute to innovative projects.
                     </motion.p>
                 </motion.div>
             </div>
